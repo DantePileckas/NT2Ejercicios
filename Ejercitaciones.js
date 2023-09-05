@@ -26,3 +26,6 @@ const sumaEdades = personajesMenoresDe18.reduce((totalEdad, personaje) => totalE
 console.log("La suma de las edades de los personajes menores de 18 años es:", sumaEdades);
 
 //Ejercicio 3: Obtener los nombres de los personajes
+const nombresPersonajes = personajesSimpsons.map(personaje => personaje.nombre);
+
+console.log(nombresPersonajes);
