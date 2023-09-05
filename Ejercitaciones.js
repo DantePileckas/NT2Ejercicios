@@ -29,3 +29,17 @@ console.log("La suma de las edades de los personajes menores de 18 años es:", s
 const nombresPersonajes = personajesSimpsons.map(personaje => personaje.nombre);
 
 console.log(nombresPersonajes);
+
+//Ejercicio 4: Cambiar el rol de los personajes
+const nuevoArray = personajesSimpsons.map(personaje => {
+    if (personaje.edad < 18) {
+      // Usamos destructuring para crear una copia del objeto y cambiar el rol
+      const { nombre, edad } = personaje;
+      return { nombre, edad, rol: "Estudiante" };
+    } else {
+      return personaje;
+    }
+  });
+  
+  console.log(nuevoArray);
+  
